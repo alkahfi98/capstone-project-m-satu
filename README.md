@@ -5,7 +5,7 @@
 
 Sistem ini adalah program untuk manajemen informasi penerbangan, maskapai, rute, dan terminal di Bandara Internasional Purwadhika. Aplikasi ini menyediakan berbagai fitur untuk mengelola informasi penerbangan dan informasi terkait maskapai, rute, maupun terminal.
 
-**Data tabel**
+## Data tabel
 | Variabel                     | Tipe Data       | Deskripsi                                                             |
 |------------------------------|-----------------|----------------------------------------------------------------------|
 | `info_penerbangan`            | List            | Daftar informasi penerbangan yang kosong pada awalnya                |
