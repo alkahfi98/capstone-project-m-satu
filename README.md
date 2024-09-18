@@ -1,8 +1,21 @@
 # capstone-project-m-satu
 
+
 # SISTEM INFORMASI BANDARA INTERNASIONAL PURWADHIKA
 
 Sistem ini adalah program untuk manajemen informasi penerbangan, maskapai, rute, dan terminal di Bandara Internasional Purwadhika. Aplikasi ini menyediakan berbagai fitur untuk mengelola informasi penerbangan dan informasi terkait maskapai, rute, maupun terminal.
+
+**Data tabel**
+| Variabel                     | Tipe Data       | Deskripsi                                                             |
+|------------------------------|-----------------|----------------------------------------------------------------------|
+| `info_penerbangan`            | List            | Daftar informasi penerbangan yang kosong pada awalnya                |
+| `info_maskapai`               | List            | Daftar maskapai yang tersedia, masing-masing merupakan string         |
+| `rute_domestik`               | Dictionary      | Dictionary berisi maskapai sebagai kunci dan rute domestik (list) sebagai nilai |
+| `rute_internasional`          | Dictionary      | Dictionary berisi maskapai sebagai kunci dan rute internasional (list) sebagai nilai |
+| `terminal_maskapai`           | Dictionary      | Dictionary berisi maskapai sebagai kunci dan terminal (string) sebagai nilai  |
+| `terminal_maskapai_domestik`  | Dictionary      | Dictionary yang sama dengan `terminal_maskapai`, untuk rute domestik  |
+| `terminal_maskapai_internasional` | Dictionary  | Dictionary yang sama dengan `terminal_maskapai`, untuk rute internasional |
+
 
 
 ## Fitur Utama
@@ -27,5 +40,6 @@ Sistem ini adalah program untuk manajemen informasi penerbangan, maskapai, rute,
      - **Hapus Data**: Menghapus maskapai, rute, dan terminal.
      - **Ubah Data**: Mengubah informasi maskapai, rute, dan terminal.
      - **Sorting Data**: Mengurutkan data maskapai, rute, dan terminal.
+
 
 
