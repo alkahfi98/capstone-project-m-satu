@@ -151,21 +151,6 @@ def melihat_info_penerbangan ():
         else:
             print(Fore.RED + "Tidak ada data penerbangan." + Style.RESET_ALL)
 
-def clear_info_penerbangan():
-    indeks_untuk_dihapus = []
-    for index, penerbangan in enumerate(info_penerbangan):
-        waktu_berangkat_str = penerbangan[6]  
-        keterangan = penerbangan[7]  
-        waktu_berangkat = datetime.datetime.strptime(waktu_berangkat_str, "%H:%M")
-        if waktu_berangkat < datetime.datetime.strptime("00:00", "%H:%M") and keterangan.lower() == "take off":
-            indeks_untuk_dihapus.append(index)
-        elif waktu_berangkat >= datetime.datetime.strptime("00:00", "%H:%M") and keterangan.lower() != "take off":
-            continue
-        else:
-            indeks_untuk_dihapus.append(index)
-    for index in reversed(indeks_untuk_dihapus):
-        del info_penerbangan[index]
-
 def tambah_data_penerbangan():
     nomor_penerbangan = len(info_penerbangan) + 1
     maskapai = input("Masukkan nama maskapai: ")
@@ -472,4 +457,3 @@ def bandara():
                 break 
 
 user()
-clear_info_penerbangan()
